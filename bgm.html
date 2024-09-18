@@ -3,50 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Embeds</title>
+    <title>Netflix Style Videos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
             margin: 0;
-            padding: 20px;
-            background-color: #f3f3f3;
-            color: #333;
+            padding: 0;
         }
-
-        h1 {
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header {
             text-align: center;
-            color: #0095f6; /* Instagram blue */
+            padding: 20px;
+            background: #e50914;
+            color: #fff;
         }
-
+        .video-section {
+            margin: 20px 0;
+        }
+        .video-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
         .video-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 0;
         }
-
-        iframe {
+        .video {
+            min-width: 300px;
+            position: relative;
+        }
+        .video iframe {
             width: 100%;
-            max-width: 600px;
-            height: 315px;
-            border: none;
-            border-radius: 12px; /* Rounded corners */
+            height: 200px;
+        }
+        .video-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-
-    <h1>YouTube Video Player</h1>
-
-    <div class="video-container">
-        <h2>1st Video: Mangata BGM</h2>
-        <iframe src="https://www.youtube.com/watch?v=h1EREb-iTUs&pp=ygULbWFuZ2F0YSBiZ20%3D" allowfullscreen></iframe>
+    <div class="header">
+        <h1>Netflix Style Videos</h1>
     </div>
-
-    <div class="video-container">
-        <h2>2nd Video</h2>
-        <iframe src="https://www.youtube.com/embed/deQcxldcOog" allowfullscreen></iframe>
+    <div class="container">
+        <div class="video-section">
+            <h2>Trending Now</h2>
+            <div class="video-container">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/deQcxldcOog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-title">Video 1</div>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/-fxDISt8d5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-title">Video 2</div>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/OHlVhhPIcu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-title">Video 3</div>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/SxpWI2BuPE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-title">Video 4</div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
