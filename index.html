@@ -12,8 +12,8 @@
             font-family: 'Arial', sans-serif;
         }
         body {
-            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-            color: #333;
+            background: #141414; /* Dark background */
+            color: #e5e5e5; /* Light text color */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -24,19 +24,20 @@
         h1, h2 {
             text-align: center;
             margin-bottom: 20px;
+            color: #e50914; /* Netflix red color */
         }
         .container {
             text-align: center;
             width: 90%;
             max-width: 800px;
             padding: 20px;
-            background: #fff;
+            background: #333; /* Dark background for the container */
             border-radius: 15px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
         }
         button {
-            background-color: #3f729b;
-            color: white;
+            background-color: #e50914; /* Netflix red */
+            color: #fff;
             padding: 15px;
             border: none;
             border-radius: 8px;
@@ -46,7 +47,7 @@
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #2a5066;
+            background-color: #b81d24; /* Darker red */
         }
         .social-icons {
             margin-top: 20px;
@@ -54,12 +55,16 @@
         .social-icons a {
             margin: 0 10px;
             font-size: 20px;
-            color: #3f729b;
+            color: #e50914; /* Netflix red */
             text-decoration: none;
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
         }
         footer {
             margin-top: 20px;
             font-size: 14px;
+            color: #e5e5e5;
         }
     </style>
 </head>
